@@ -20,6 +20,7 @@
     "auth0-js": "^9.13.4",
     "crypto-js": "^4.0.0",
     "firebase": "^7.16.0",
+    "pdfjs-dist": "^2.4.456",
     "remove-markdown": "^0.3.0",
     "showdown": "^1.9.1",
     "showdown-highlight": "^2.1.4",
