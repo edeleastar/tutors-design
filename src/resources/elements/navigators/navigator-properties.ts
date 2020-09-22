@@ -104,14 +104,32 @@ export class NavigatorProperties implements LoginListener {
   createCompanionBar(properties: Properties) {
     this.companions.nav = [];
     if (properties.slack)
-      this.companions.nav.push({ link: properties["slack"], icon: "slack", tip: "to slack channel for this module" });
+      this.companions.nav.push({
+        link: properties["slack"],
+        icon: "slack",
+        target: "_blank",
+        tip: "to slack channel for this module",
+      });
     if (properties.moodle)
-      this.companions.nav.push({ link: properties["moodle"], icon: "moodle", tip: "to moodle module for this module" });
+      this.companions.nav.push({
+        link: properties["moodle"],
+        icon: "moodle",
+        target: "_blank",
+        tip: "to moodle module for this module",
+      });
     if (properties.youtube)
       this.companions.nav.push({
         link: properties["youtube"],
         icon: "youtube",
+        target: "_blank",
         tip: "to youtube channel for this module",
+      });
+    if (properties.zoom)
+      this.companions.nav.push({
+        link: properties["zoom"],
+        icon: "zoom",
+        tip: "to zoom meeting for this module",
+        target: "_blank",
       });
     this.companions.visible = this.companions.nav.length > 0;
   }
