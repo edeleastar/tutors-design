@@ -110,6 +110,13 @@ export class NavigatorProperties implements LoginListener {
         target: "_blank",
         tip: "to slack channel for this module",
       });
+    if (properties.zoom)
+      this.companions.nav.push({
+        link: properties["zoom"],
+        icon: "zoom",
+        tip: "to zoom meeting for this module",
+        target: "_blank",
+      });
     if (properties.moodle)
       this.companions.nav.push({
         link: properties["moodle"],
@@ -124,13 +131,7 @@ export class NavigatorProperties implements LoginListener {
         target: "_blank",
         tip: "to youtube channel for this module",
       });
-    if (properties.zoom)
-      this.companions.nav.push({
-        link: properties["zoom"],
-        icon: "zoom",
-        tip: "to zoom meeting for this module",
-        target: "_blank",
-      });
+
     this.companions.visible = this.companions.nav.length > 0;
   }
 
