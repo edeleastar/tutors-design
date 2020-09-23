@@ -35,6 +35,7 @@ import {
   faPlusCircle,
   faArrowAltCircleUp,
   faArrowCircleDown,
+  faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 
 export interface IconNav {
@@ -87,4 +88,5 @@ export const faIcons = {
   zoomIn: faPlusCircle,
   up: faArrowAltCircleUp,
   down: faArrowAltCircleDown,
+  zoom: faVideo,
 };
